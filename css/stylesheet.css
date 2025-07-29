@@ -1,0 +1,119 @@
+/* コンテンツ全体 */
+#contents {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #74325c;
+}
+/* 上段　*/
+.event-info{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: url(../images/background.png) no-repeat 100%
+    20%, url(../images/background2.png) no-repeat 100% 
+}
+/*　下段*/
+.local-nav{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: #522f60;
+}
+/* テナ */
+.local-nav:before,
+.local-nav:after{
+    position: absolute;
+    display: block;
+    content: '';
+    background-repeat:no-repeat;
+}
+/*.local-nav:before{
+    right: 0;
+    bottom: 20%;
+    width: 738px;
+    height:513px;
+    background: url(../images/stage.png) no-repeat;
+}*/
+.local-nav:after{
+    top: -150px;
+    left: 430px;
+    width:362px;
+    height: 187px;
+    background: url(../images/tenna.png) no-repeat;
+}
+/* イベント名 */
+.event-title{
+    position: absolute;
+    bottom: 65px;
+    left: 20px;
+    width: 473px;
+    height: 95px;
+    text-indent: -199em;
+    background: url(../images/lightners.png) no-repeat;
+}
+.logo{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 473px;
+    height: 95px;
+    text-indent: -199em;
+    background: url(../images/its-tv-time.gif) no-repeat;
+}
+/* ローカルナビゲーション */
+.local-nav ul{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.local-nav ul li{
+    display: inline-block;
+}
+.local-nav ul li a{
+    display: block;
+    margin-right: 2em;
+    padding: 0 0 0 15px;
+    color: #ffffff;
+    background: url(../images/circle.png) no-repeat left center;
+}
+.local-nav ul li a hover{
+    color:#d786ae;
+}
+/* 宣材写真 */
+.about-lightner a{
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    transition: 0.2s;
+    text-indent: -999em;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about-lightner a.ralsei{
+    top: 10%;
+    left: 30%;
+    width:120px;
+    height: 120px;
+    background-image: url(../images/ralsei.png);
+    background-color:lightgreen;
+}
+.about-lightner a.susie{
+    bottom: 25%;
+    left: 60%;
+    width: 320px;
+    height: 320px;
+    background-image: url(../images/susie.png);
+    background-color:pink;
+}
+.about-lightner a.kris{
+    bottom: 8%;
+    left: 10%;
+    width: 210px;
+    height: 210px;
+    background-image: url(../images/kris.png);
+    background-color:lightblue;
+}
