@@ -99,7 +99,7 @@
     width:120px;
     height: 120px;
     background-image: url(../images/ralsei.png);
-    background-color:lightgreen;
+    background-color:#7caf7b;
 }
 .about-lightner a.susie{
     bottom: 25%;
@@ -107,7 +107,7 @@
     width: 320px;
     height: 320px;
     background-image: url(../images/susie.png);
-    background-color:pink;
+    background-color:#bc7292;
 }
 .about-lightner a.kris{
     bottom: 8%;
@@ -115,5 +115,5 @@
     width: 210px;
     height: 210px;
     background-image: url(../images/kris.png);
-    background-color:lightblue;
+    background-color:#76a4c3;
 }
