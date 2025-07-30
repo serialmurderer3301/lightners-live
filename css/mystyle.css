@@ -89,7 +89,7 @@
     color: #ffffff;
     background: url(../images/circle.png) no-repeat left center;
 }
-.local-nav ul li a hover{
+.local-nav ul li a:hover{
     color:#d786ae;
 }
 /* 宣材写真 */
