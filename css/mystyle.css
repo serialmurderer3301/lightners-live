@@ -195,9 +195,10 @@
 }
 @keyframes anim_convulsions{
     0%{
-        transform: translate(0px, 0px);
+        transform: translate(-5px, -5px);
     }
     100%{
         transform: translate(5px, 5px);
     }
+
 }   
