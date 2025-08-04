@@ -1,0 +1,223 @@
+/* コンテンツ全体 */
+#contents {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-width: 960px;
+    height: 100%;
+    min-height: 800px;
+    background: #74325c;
+}
+/* 上段　*/
+.event-info{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: url(../images/background.png) no-repeat 100%
+    20%, url(../images/background2.png) no-repeat 100% 
+}
+/*　下段*/
+.local-nav{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: #522f60;
+}
+/* テナ */
+.local-nav:before,
+.local-nav:after{
+    position: absolute;
+    display: block;
+    content: '';
+    background-repeat:no-repeat;
+}
+.local-nav:before{
+    right: 0;
+    bottom: 5%;
+    width: 738px;
+    height:513px;
+    background: url(../images/star-back.png) no-repeat;
+}
+.local-nav:after{
+    top: -174px;
+    left: 510px;
+    width:362px;
+    height: 187px;
+    background: url(../images/tenna.png) no-repeat;
+}
+/* イベント名 */
+.event-title{
+    position: absolute;
+    bottom: 65px;
+    left: 20px;
+    width: 500px;
+    height: 95px;
+    text-indent: -199em;
+    background: url(../images/lightners.png) no-repeat;
+}
+.round{
+    position: absolute;
+    bottom: 10px;
+    left: 105px;
+    font-size: 40px;
+    font-family: 'JF-Dot-Shinonome-14-Regular';
+    color:#ffffff;
+}
+.logo{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 180px;
+    height: 95px;
+    text-indent: -199em;
+    background: url(../images/its-tv-time.gif) no-repeat;
+}
+/* ローカルナビゲーション */
+.local-nav ul{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.local-nav ul li{
+    display: inline-block;
+}
+.local-nav ul li a{
+    display: block;
+    margin-right: 2em;
+    padding: 0 0 0 15px;
+    color: #ffffff;
+    background: url(../images/circle.png) no-repeat left center;
+}
+.local-nav ul li a:hover{
+    color:#d786ae;
+}
+/*言語*/
+.regions a{
+    position: absolute;
+    display: block;
+    gap: 16px;
+    text-indent: -999em;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.regions a.japanese{
+    top: 0px;
+    right: 65px;
+    width:40px;
+    height: 40px;
+    background-image: url(../images/flag-jp.png);
+}
+.regions a.english{
+    top: 0px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/flag-us.png);
+}
+/* 宣材写真 */
+.about-lightner a{
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    transition: 0.2s;
+    text-indent: -999em;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about-lightner a.ralsei{
+    top: 10%;
+    left: 30%;
+    width:120px;
+    height: 120px;
+    background-image: url(../images/ralsei.png);
+    background-color:#7caf7b;
+}
+.about-lightner a.susie{
+    bottom: 25%;
+    left: 60%;
+    width: 320px;
+    height: 320px;
+    background-image: url(../images/susie.png);
+    background-color:#bc7292;
+}
+.about-lightner a.kris{
+    bottom: 8%;
+    left: 10%;
+    width: 210px;
+    height: 210px;
+    background-image: url(../images/kris.png);
+    background-color:#76a4c3;
+}
+/*モーダル*/
+.modal{
+    display:none;
+}
+#modal{
+    display:none;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+.modal:target{
+    display:flex;
+}
+.modal-content{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+    text-indent: -999em;
+}
+.modal-content.sponser{
+    height: 500px;
+    width: 666px;
+    top: 150px;
+    left: 196px; 
+    background-image: url(../images/sponser.png); 
+}
+.modal-content.close{
+    height: 160px;
+    width: 116px;
+    top: 65px;
+    left: 750px;
+    background-image: url(../images/close.png);
+}
+.modal-content.prize{
+    height: 422px;
+    width: 666px;
+    top: 130px;
+    left: 190px; 
+    background-color: black;
+    background-image: url(../images/prizes-alt.png);
+}
+.modal-content.plush{
+    top: 344px;
+    left: 445px;
+    height: 156px;
+    width: 169px;
+    background-image: url(../images/ralsei-plush.png)
+}
+.plush{
+    position:relative;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.05s;
+}
+/*アニメーション定義*/
+.keyframe{
+    animation-name: anim_convulsions;
+}
+@keyframes anim_convulsions{
+    0%{
+        transform: translate(-5px, -5px);
+    }
+    100%{
+        transform: translate(5px, 5px);
+    }
+}   
