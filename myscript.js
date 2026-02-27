@@ -63,3 +63,15 @@ function stop_se() {
 function onModalClose() {
     stop_se();
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const video = document.getElementById('opening-video');
+
+    if (video) {
+        video.addEventListener('ended', function () {
+            // モーダルを閉じる
+            window.location.hash = '#';  // URLの #modal0 を消す → モーダル非表示
+        });
+    }
+});
+
