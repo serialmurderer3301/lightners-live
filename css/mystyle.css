@@ -173,6 +173,18 @@
     background-position: center; 
     text-indent: -999em;
 }
+.modal-content.opening{
+    position: absolute;
+    width: 800px;
+    height: auto;
+    top: 100px;
+    left: 100px;
+}
+.modal-content.opening video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 .modal-content.sponser{
     height: 500px;
     width: 666px;
@@ -227,4 +239,5 @@
     100%{
         transform: translate(5px, 5px);
     }
+
 }   
