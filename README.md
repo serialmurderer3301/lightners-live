@@ -1,1 +1,1 @@
-Deltarune Chapter 3に登場するlightner's liveにもし、ホームページがあったらをコンセプトに作りました。
+Deltarune Chapter 3に登場するlightners liveにもし、ホームページがあったらをコンセプトに作りました。
