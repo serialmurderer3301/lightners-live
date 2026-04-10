@@ -254,4 +254,11 @@ button{
     100%{
         transform: translate(5px, 5px);
     }
+}    
+/*コピーライト表示*/
+.footer{
+    position:absolute;
+    align-items: right;
+    width: auto;
+    height: auto;
 }   
